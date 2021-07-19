@@ -1,6 +1,6 @@
 #!/bin/bash
 
-lotion_mirror="https://github.com/puneetsl/lotion"
+lotion_mirror="https://github.com/yctseng1227/lotion"
 required_programs=(git tar 7z wget)
 
 # Check for required programs
