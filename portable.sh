@@ -23,7 +23,7 @@ mkdir -p $INSTALL_DIR
 # Unzips nativefier application
 
 if [[ $command == 'web' ]]; then
-	wget https://github.com/puneetsl/lotion/releases/download/V-0.05/Lotion-web.tar.xz
+	wget --no-check-certificate https://github.com/puneetsl/lotion/releases/download/V-0.05/Lotion-web.tar.xz
 	tar xvf $PD/Lotion-web.tar.xz -C $INSTALL_DIR --strip 1
 	rm Lotion-web.tar.xz
 	/bin/bash $PD/create_shortcut.sh $command
@@ -31,7 +31,7 @@ if [[ $command == 'web' ]]; then
 	exit 0
 fi
 
-wget https://github.com/puneetsl/lotion/releases/download/V-0.05/Lotion-native.tar.gz
+wget --no-check-certificate https://github.com/puneetsl/lotion/releases/download/V-0.05/Lotion-native.tar.gz
 tar xvf $PD/Lotion-native.tar.gz -C $INSTALL_DIR --strip 1
 rm Lotion-native.tar.gz
 
